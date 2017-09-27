@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Unternehmen</title>
+    <link rel="stylesheet" href="css/unternehmen.css" />
+</head>
+<body>
+
+    <div id='cssmenu'>
+<ul>
+   <li><a href='../../index.htm'>fancy family</a></li>
+   <li><a href='../../FANcies.html'>FANcies</a></li>
+   <li class='active'><a href='#'>Unternehmen</a></li>
+   <li><a href='../../impressum.html'>Impressum</a></li>
+</ul>
+</div>
+
+    <div class="horizon scroll">
+        <img src="images/horizon_unternehmen.png" alt="" />
+    </div>
+    <div class="middle scroll">
+        <img src="images/middle_unternehmen.png" alt="" />
+    </div>
+    <div class="front scroll">
+        <img src="images/unternehmen_front.png" alt="" />
+    </div>
+    
+    <script type="text/javascript" src="../libs/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/js/jquery.jInvertScroll.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+            {
+            height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent);
+            }
+        });
+    }(jQuery));
+    </script>
+</body>
+</html>
